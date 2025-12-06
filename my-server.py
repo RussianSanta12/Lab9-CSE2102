@@ -14,7 +14,7 @@ def hello():
 def echo():
    return "You said: " + request.form['text']
 
-# curl -d "uuid=e0fd05e6-cfaa-11f0-829e-000d3a8e16b7" -X POST http://localhost:5000/uuid
+# curl -d "uuid=e0fd05e6-cfaa-11f0-829e-00d3a8e16b7" -X POST http://localhost:5000/uuid
 @app.route("/uuid", methods=['POST'])
 def idcheck():
    myuuid = str(request.form['uuid'])
